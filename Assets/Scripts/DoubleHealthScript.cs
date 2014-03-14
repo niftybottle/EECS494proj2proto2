@@ -101,7 +101,6 @@ public class DoubleHealthScript : MonoBehaviour {
 	void OnDeath(){
 		//Put things you would like to happen when primary health reaches 0 here
 		dm.dead = true;
-		Destroy(gameObject);
 	}
 	//Represent damage to Secondary Health. Negative damage heals
 	//Input: Magnitude of damage/healing

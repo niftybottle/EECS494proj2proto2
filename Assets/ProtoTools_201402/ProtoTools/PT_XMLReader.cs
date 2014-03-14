@@ -187,7 +187,7 @@ public class PT_XMLReader {
 
 
 
-public class PT_XMLHashList {
+public class PT_XMLHashList:IEnumerable {
 	public ArrayList list = new ArrayList();
 	
 	public PT_XMLHashtable this[int s] {
@@ -213,6 +213,9 @@ public class PT_XMLHashList {
 		get {
 			return(list.Count);
 		}
+	}
+	public IEnumerator GetEnumerator(){
+		return list.GetEnumerator();
 	}
 }
 
